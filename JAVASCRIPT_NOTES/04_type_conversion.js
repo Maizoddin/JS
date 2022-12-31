@@ -1,5 +1,5 @@
 // to Number
-// "" => 0   "abc" => NaN    null => 0    undefined => NaN     true => 1    
+// "" => 0   "abc" => NaN    "12ab" => NaN    null => 0    undefined => NaN     true => 1    
 // let temp = "45"
 // let num = Number(temp)
 
@@ -38,3 +38,4 @@ let temp4 = true + undefined
 // VALUE = NaN
 
 // NOTE : NULL = 0   TRUE = 1   FALSE = 0
+// NaN = Not a Number
