@@ -16,6 +16,16 @@ for (let num = 1; num <= 10; num++) {
 console.log(sum);
 */
 
+// Example 3
+let marks = {
+    monika: 100,
+    siyan: 125,
+    shen: 90,
+  };
+console.log("Length : ",Object.keys(marks).length);
+console.log("Keys : ",Object.keys(marks));
+console.log("Values : ",Object.values(marks));
+
 // ======================================================================================
 
 "for in"
