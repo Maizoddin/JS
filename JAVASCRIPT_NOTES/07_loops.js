@@ -17,14 +17,16 @@ console.log(sum);
 */
 
 // Example 3
+
 let marks = {
     monika: 100,
     siyan: 125,
     shen: 90,
-  };
-console.log("Length : ",Object.keys(marks).length);
-console.log("Keys : ",Object.keys(marks));
-console.log("Values : ",Object.values(marks));
+};
+for (let i = 0; i < Object.keys(marks).length; i++) {
+    console.log(marks[Object.keys(marks)[i]]);
+}
+
 
 // ======================================================================================
 
