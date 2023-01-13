@@ -16,6 +16,18 @@
 // let bool = Boolean(temp) 
 
 
+let num = "123xyz"
+num = parseInt(num)
+// 123
+
+let num1 = "123xyz"
+num1 = parseFloat(num1)
+// 123
+
+let num2 = 10
+num2 = num2.toFixed(3)   
+ // 10.000
+
 
 // EXAMPLES
 // NULL + UNDEFINED
@@ -37,5 +49,14 @@ let temp4 = true + undefined
 // TYPE = NUMBER
 // VALUE = NaN
 
+// let num = 1 + "0"
+// 10
+
+// let num = "2" - "2"
+// 0
+
+
 // NOTE : NULL = 0   TRUE = 1   FALSE = 0
 // NaN = Not a Number
+
+// Falsy Values : null  undefined  ""  0
