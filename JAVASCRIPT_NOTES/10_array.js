@@ -92,6 +92,9 @@ nums.forEach(square)
 // OR
 nums.forEach((num) => { console.log((num*num)) })
 
+// It takes 3 arguments : value,index,array
+nums.forEach((num,idx)=>{console.log(`Index : ${idx} and Value : ${num}`);})
+
 // ----------------------------------------------------------------
 
 // sort()
