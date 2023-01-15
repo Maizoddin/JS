@@ -1,4 +1,4 @@
-// In javaScript when we call any function explicitly then only it will return it's actual result else it will just return [Function name]
+// In javaScript when we call function explicitly then only it will return it's actual result else it will just return [Function name]
 
 // Example 
 let age = 16;
