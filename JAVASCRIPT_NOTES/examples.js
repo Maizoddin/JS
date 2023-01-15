@@ -16,3 +16,23 @@ while (true){
      console.log("Enter samller number");
    }
 }
+
+// -----------------------------------------------------------------------------------
+
+// Driving School Game
+alert("Welcome to Driving School Game!!");
+let valid = (age) => {
+  return age >= 20;
+};
+do {
+  let age = prompt("Enter Your Age : ");
+  age = Number.parseInt(age);
+  if (valid(age)) {
+    alert("You can Drive");
+  } else {
+    alert("You can't Drive");
+  }
+  again = confirm("Do you want to check again");
+} while (again);
+
+// -----------------------------------------------------------------------------------
