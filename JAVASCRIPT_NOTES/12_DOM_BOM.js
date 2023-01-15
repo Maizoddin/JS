@@ -1,4 +1,9 @@
+// Window is a Global Object
+
+//--------------------------------------------------------------------------------------------
+
 // BOM : Browser Object Model
+// It provides some additional features provided by host browser
  
 // alert
 alert("Hey Welcome to Age Alert PopUp!!")
@@ -17,23 +22,11 @@ else{
   document.write("Your Age is : NA")
 }
 
+// location.href
+location.href = "https://www.google.com";
+
 //--------------------------------------------------------------------------------------------
 
 // DOM : Document Object Model
+document.body.style.backgroundColor = "red";
 
-alert("Welcome to BackGround Game!!");
-let choice = prompt("black or red : ");
-switch(choice){
-  case "black":
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
-    break;
-  case "red":
-    document.body.style.backgroundColor = "red";
-    document.body.style.color = "black";
-    break;
-  default :
-     document.body.style.backgroundColor = "yellow";
-     document.body.style.color = "red";
-     break  
-}

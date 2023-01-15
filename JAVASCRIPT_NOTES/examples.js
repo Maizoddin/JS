@@ -36,3 +36,17 @@ do {
 } while (again);
 
 // -----------------------------------------------------------------------------------
+
+// Site Visiting Game
+alert("Welcom to Visiting Site")
+let name= prompt("Enter Your Site : ");
+location.href = `https://www.${name}.com`;
+
+// -----------------------------------------------------------------------------------
+
+// BackGround Color Changing Game
+alert("Welcome to BackGround Changing Game");
+color = prompt("Enter Your Color");
+document.body.style.backgroundColor = color;
+
+// -----------------------------------------------------------------------------------
