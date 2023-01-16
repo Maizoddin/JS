@@ -50,3 +50,35 @@ color = prompt("Enter Your Color");
 document.body.style.backgroundColor = color;
 
 // -----------------------------------------------------------------------------------
+
+// ToDo List
+let myToDo = {
+  day: "Monday",
+  date: "16-01-2023",
+  task: [],
+  done: [],
+  pending: [],
+  report: function () {
+    console.log(`Day : ${this.day} \nDate : ${this.date} \nTasks : ${this.task} \nDone : ${this.done} \nPendig : ${this.pending}`);
+  },
+};
+
+let addTask = function (todo, desc) {
+  todo.task.push(desc);
+  todo.pending.push(desc);
+};
+let doneTask = function (todo, desc) {
+  todo.done.push(desc);
+  todo.pending = todo.pending.filter((task) => task != desc);
+};
+
+addTask(myToDo, "JavaScript");
+addTask(myToDo, "DSA");
+addTask(myToDo, "SEE");
+doneTask(myToDo, "JavaScript");
+addTask(myToDo, "MANJALI");
+addTask(myToDo, "KSCST");
+doneTask(myToDo, "MANJALI");
+myToDo.report();
+
+// -----------------------------------------------------------------------------------

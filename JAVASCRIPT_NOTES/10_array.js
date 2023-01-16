@@ -55,6 +55,12 @@ sub = nums.slice(2,5);
 nums.splice(2,3,360,480,900,4000)
 // It modifies original array
 
+// Removing target element
+idx = nums.indexOf(target)
+nums.splice(idx,1)
+// OR
+nums = nums.filter((num) => (num!=target))
+
 // ----------------------------------------------------------------
 
 // toString()

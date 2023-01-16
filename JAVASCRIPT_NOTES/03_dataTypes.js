@@ -15,24 +15,6 @@ let g;                  //Default undefined
 console.log(typeof (b)); // Type of Undefined is Undefined
 console.log(typeof g);  // Type of null is object
 
-// Non Premetive Data Types
-// Object
-let score = { "john": 25, "sam": 50 };
-score["tom"] = 100;
-console.log(score["tom"]);
-console.log("Length : ", Object.keys(score).length);
-console.log("Keys : ", Object.keys(score));
-console.log("Values : ", Object.values(score));
+nums = [1,2,3,4];
+console.log(typeof nums);   // object
 
-// Example 
-const userId = 200;
-let userName = "Maizoddin"
-let isValidUser = true
-let paymentMode;
-// Modern Printing
-console.log(`
-userId : ${userId}
-userName : ${userName}
-isVslidUser : ${isValidUser}
-paymentMode : ${paymentMode}
-`);
