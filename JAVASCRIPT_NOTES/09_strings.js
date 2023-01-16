@@ -1,5 +1,6 @@
 let name = "johnny singh";
 
+// Important : String is immutable(i.e no methode can modify original string)
 // length
 console.log(name.length);     // 12
 
@@ -7,13 +8,13 @@ console.log(name.length);     // 12
 console.log(name.indexOf("y"));  // 5
 
 // toUpperCase
-console.log(name.toUpperCase());   // JOHNNY SINGH
+console.log(name.toUpperCase());   // JOHNNY SINGH    
 
 // toLowerCase
-console.log(name.toLowerCase());   // johnny singh
+console.log(name.toLowerCase());   // johnny singh    
 
 // replace
-console.log(name.replace("johnny", "tommy"));  // tommy singh
+console.log(name.replace("johnny", "tommy"));  // tommy singh  
 
 // endsWith
 console.log(name.endsWith("singh"));  // true
@@ -28,7 +29,7 @@ console.log(name.includes("john"));  //true
 console.log(name.slice(0, 4));    // john
 
 // trim
-console.log(name.trim());     // remove all extra space present at start and end of string
+console.log(name.trim());     // remove all extra space present at start and end of string  
 
 
 

@@ -112,9 +112,10 @@ function compare(a, b) {
 }
 nums.sort(compare);
 // OR
-nums.sort(compare = (a,b) => {return a-b})
+nums.sort(compare = (a,b) => {return a-b})  // nums.sort(compare = (a,b) => (a - b))
 // OR
-nums.sort((a,b) => {return a-b})
+nums.sort((a,b) => {return a-b})            // nums.sort((a,b) => (a-b))
+
 
 // Descending order
 function compare(a, b) {
@@ -122,9 +123,10 @@ function compare(a, b) {
 }
 nums.sort(compare);
 // OR
-nums.sort(compare = (a,b) => {return b-a})
+nums.sort(compare = (a,b) => {return b-a})  // nums.sort(compare = (a,b) => (b - a))
 // OR
-nums.sort((a,b) => {return b-a})
+nums.sort((a,b) => {return b-a})            // nums.sort((a,b) => (a-b))
+
 
 // Note
 /*
@@ -133,6 +135,7 @@ if positive = swap
 if negative = don't swap
 if 0 = don't swap
 */
+
 
 // Example
 function compare(person1,person2){
