@@ -1,5 +1,5 @@
 //Array Methods
-// length, indexOf(), push(), pop(), delete, shift(), unshift(), sort(), reverse(), slice(), splice(), toString(), join(), concat(), Array.from(), forEach
+// length, indexOf(), lastIndexOf(), find(), findIndex(), push(), pop(), delete, shift(), unshift(), sort(), reverse(), slice(), splice(), toString(), join(), concat(), some(), every(), Array.from(), forEach
 let nums = [24, 6, 18, 699];
 
 // length
@@ -8,7 +8,40 @@ console.log(nums.length);
 // ----------------------------------------------------------------
 
 // indexOf()
-console.log(nums.indexOf(18));  
+console.log(nums.indexOf(18));
+
+// Here we can pass 2 arguments 
+// indexOf(num, startIdx)
+let idx = array.indexOf(12,3);
+
+// If num is not present then it return -1
+
+// ----------------------------------------------------------------
+
+// lastIndexOf()
+// It searches from end
+console.log(nums.lastIndexOf(6));
+
+// Here we can pass 2 arguments 
+// lastIndexOf(num, startIdx)
+let index = array.lastIndexOf(12,3);
+
+// If num is not present then it return -1
+
+// ----------------------------------------------------------------
+
+// find(function) 
+// it returns the first element which satisfies the condition
+let array = [12,24,42,26,77,39,12,75,52]
+let element = array.find((num) => (num%13==0))
+// element : 26
+
+// ----------------------------------------------------------------
+
+// findIndex(function)
+// it returns the index of first element which satisfies the condition
+let i = array.findIndex((num) => (num%5==0))
+// i : 6
 
 // ----------------------------------------------------------------
 
@@ -48,6 +81,10 @@ nums.reverse()
 // slice()
 sub = nums.slice(2,5);
 
+// Creating copy
+c = nums.clice(0)
+// Here we can use Negative Index
+
 // ----------------------------------------------------------------
 
 // splice(arg1, arg2, arg3)
@@ -61,12 +98,14 @@ nums.splice(idx,1)
 // OR
 nums = nums.filter((num) => (num!=target))
 
+// Here we can use Negative Index
+
 // ----------------------------------------------------------------
 
 // toString()
 str = nums.toString()
 // It converts an array into string "24, 6, 18, 699"
-
+// It modifies original array
 // ----------------------------------------------------------------
 
 // join()
@@ -78,6 +117,18 @@ str = nums.join(" ")
 // concat()
 newArray = nums.concat([11,22,33],[44,55,66])
 // [ 24, 6, 18, 699, 11, 22, 33, 44, 55,66 ]
+
+// ----------------------------------------------------------------
+
+// some()
+// if any one of the element satisfies the condition then answer will be true
+let res = nums.some((num) => (num%2==0))
+
+// ----------------------------------------------------------------
+
+// every()
+// if every element satisfies the condition then the answer will be true 
+let result = nums.every((num) => (num%2==0))
 
 // ----------------------------------------------------------------
 
