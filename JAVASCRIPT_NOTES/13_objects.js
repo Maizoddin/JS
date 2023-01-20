@@ -47,7 +47,14 @@ let udemy = {
       }
   }
   
+udemy.getCourceCertificate = function(){
+      this.enrolledCourses.forEach((cource) => console.log(`Congratulation's You have Successfully Completed ${cource[0]} Cource`))   
+    }
+
   udemy.buyCourse("  React JS     ",  449)
   udemy.buyCourse("  Angular JS   ",  449)
   udemy.buyCourse("  Node JS      ",  550)
   udemy.myCourses()
+  udemy.getCourceCertificate()
+
+  
