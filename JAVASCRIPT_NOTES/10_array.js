@@ -133,7 +133,8 @@ let result = nums.every((num) => (num%2==0))
 // ----------------------------------------------------------------
 
 // Array.from()  
-// It converts other iterables into an array
+// It converts other iterables into an array and gives new Array
+// It won't modifies original iterable 
 name = "john";
 arr = Array.from(name);
 // [ 'j', 'o', 'h', 'n' ]

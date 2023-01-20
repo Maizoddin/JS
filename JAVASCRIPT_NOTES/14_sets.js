@@ -26,3 +26,8 @@ for (let val of hashSet){
 
 // forEach
 hashSet.forEach(num => console.log(num*num));
+
+// Important : To use filter on set we should convert it in array using Array.from()
+let oddNums = Array.from(hashSet).filter((num) => (num%2==0));
+
+console.log(hashSet);

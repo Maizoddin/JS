@@ -1,3 +1,4 @@
+// Important : We can use this function's only on Arrays
 let nums = [12,11,14,16,17,19]
 
 // fill()

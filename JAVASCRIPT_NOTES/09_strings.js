@@ -1,6 +1,10 @@
 let name = "johnny singh";
 
 // Important : String is immutable(i.e no methode can modify original string)
+// We can use [for-in, for_of]
+// we can't use [forEach]
+// 
+
 // length
 console.log(name.length);     // 12
 

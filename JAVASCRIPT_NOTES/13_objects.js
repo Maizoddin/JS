@@ -1,3 +1,6 @@
+// Important : Object is not iterable so we can only use [for-in : It gives keys]
+// we can't use [for-of, forEach]
+
 let myInfo = {
     name : "Maizoddin",
     age : 22,
@@ -15,6 +18,9 @@ let myName = myInfo["name"];  //  " " is required
 myInfo.sem = 7;
 // OR
 myInfo["sem"] = 7;
+
+// Deleting item
+// delete udemy.college
 
 // Printing
 console.log("Length : ", Object.keys(myInfo).length);      // Length
@@ -46,10 +52,14 @@ let udemy = {
       this.enrolledCourses.forEach((course,idx) => {console.log(`${idx+1}    ${course[0]}    ${course[1]}/-`);})
       }
   }
-  
+
+// Adding Methode from outside
 udemy.getCourceCertificate = function(){
       this.enrolledCourses.forEach((cource) => console.log(`Congratulation's You have Successfully Completed ${cource[0]} Cource`))   
-    }
+}
+
+// Deleting Methode 
+// delete udemy.getCourceCertificate
 
   udemy.buyCourse("  React JS     ",  449)
   udemy.buyCourse("  Angular JS   ",  449)
