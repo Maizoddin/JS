@@ -32,6 +32,7 @@ for (let i = 0; i < Object.keys(marks).length; i++) {
 
 "for in"
 // It gives keys or indexes
+// It works on Array, String, Object
 
 // Example 1
 /*
@@ -61,7 +62,7 @@ for (let idx in str) {
 
 "for of"
 // It gives values
-// It won't work on objects
+// It wonk's on Array, String, Set
 
 // Example 1
 /*

@@ -1,5 +1,5 @@
 // Important : Object is not iterable so we can only use [for-in : It gives keys]
-// we can't use [for-of, forEach]
+// we can't use [for-of, forEach], but there are some tricky ways to do it
 
 let myInfo = {
     name : "Maizoddin",
@@ -22,11 +22,41 @@ myInfo["sem"] = 7;
 // Deleting item
 // delete udemy.college
 
-// Printing
+
 console.log("Length : ", Object.keys(myInfo).length);      // Length
+// 5
+
 console.log("Keys : ", Object.keys(myInfo));               // It returns array of Keys
+// [ 'name', 'age', 'usn', 'college', 'sem' ]
+
 console.log("Values : ", Object.values(myInfo));           // It returns array of Values
+// [ 'Maizoddin', 22, '2GI20CS406', 'KLS GIT', 7 ]
+
+console.log("Item : ",Object.entries(myInfo));             // It return array of array's 
+// [[ 'name', 'Maizoddin' ], [ 'age', 22 ], [ 'usn', '2GI20CS406' ], [ 'college', 'KLS GIT' ]]
+
 console.table(myInfo);                                     //Prints in Tabular Form
+
+
+// for in
+for (let key in myInfo){
+  console.log(key);
+}
+
+// for of
+// Printing Values
+for (let value of Object.values(myInfo)){
+  console.log(value);
+}
+// Printing Key and Value
+for (let [key,val] of Object.entries(myInfo)){
+  console.log(`Key : ${key}    Value : ${val}`);
+}
+
+// forEach
+Object.entries(myInfo).forEach((obj) => {
+  console.log(`Key : ${obj[0]}  Value : ${obj[1]}`);
+})
 
 // ----------------------------------------------------------------------------------
 

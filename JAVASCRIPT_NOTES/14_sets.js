@@ -1,3 +1,5 @@
+// We can use [for of, forEach] on set
+
 // creating new set
 let hashSet = new Set();
 // OR
