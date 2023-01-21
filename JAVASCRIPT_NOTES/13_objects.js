@@ -58,6 +58,14 @@ Object.entries(myInfo).forEach((obj) => {
   console.log(`Key : ${obj[0]}  Value : ${obj[1]}`);
 })
 
+
+// Check Whether key exists or not
+if (myInfo.salary){
+  console.log("Exists");
+}else{
+  console.log("Does Not Exists");
+}
+
 // ----------------------------------------------------------------------------------
 
 // Methods in Objects
