@@ -17,6 +17,7 @@ else {
 
 
 // Switch Statement
+// Example 1
 /*
 let language = "JavaScr2ipt";
 switch (language) {
@@ -36,6 +37,26 @@ switch (language) {
 }
 */
 
+// Example 2
+let day = "monday";
+switch(day){
+     
+  case "monday":
+       console.log("Lazy Day");
+       break;
+  case "wednesday":
+  case "thursday":
+       console.log("Normal Day");
+       break;
+  case "friday":{
+      console.log("Work");
+      console.log("Pay");
+      break;
+      }
+  default :
+      console.log("Not Found");
+      break;
+}
 
 // Ternary Operator
 /*

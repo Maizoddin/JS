@@ -4,6 +4,8 @@
 
 let name = "johnny singh";
 
+// let name = "John".repeat(5);
+
 // length
 console.log(name.length);     // 12
 
@@ -45,3 +47,12 @@ let str = "Hey folks Good Morning";
 let arr = str.split(" ");    // [ 'Hey', 'folks', 'Good', 'Morning' ]
 
 let s = arr.join(" ");   // "Hey folks Good Morning"
+
+
+// padstart     |     padEnd
+let temp = "123";
+let accNo = temp.padStart(7,"0");    // 0000123
+let acn = temp.padEnd(7,"0");     // 1230000
+
+
+
