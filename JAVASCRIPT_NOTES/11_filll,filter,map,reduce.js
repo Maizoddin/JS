@@ -11,7 +11,7 @@ nums.fill(null, 1,5)
 
 // filter()
 evenArray = nums.filter((num) => {return num%2==0})
-// filter : It removes(filter out) the elements for which the condition false
+// filter : It removes(filter out) the elements for which the condition is false and return a new array
 // [12,14,16]
 
 let array = [2,4,6,8,10,12,14,15,21]

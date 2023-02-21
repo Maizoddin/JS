@@ -13,3 +13,7 @@ console.log(`Name : ${name}`);
 process.stdout.write("Hello");
 
 
+// Important
+console.log(Boolean("")); // false
+console.log(Boolean([])); //true
+console.log(Boolean({}));  //true

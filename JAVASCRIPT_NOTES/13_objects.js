@@ -48,15 +48,6 @@ for (let key in myInfo){
 for (let value of Object.values(myInfo)){
   console.log(value);
 }
-// Printing Key and Value
-for (let [key,val] of Object.entries(myInfo)){
-  console.log(`Key : ${key}    Value : ${val}`);
-}
-
-// forEach
-Object.entries(myInfo).forEach((obj) => {
-  console.log(`Key : ${obj[0]}  Value : ${obj[1]}`);
-})
 
 
 // Check Whether key exists or not

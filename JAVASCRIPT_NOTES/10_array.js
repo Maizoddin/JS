@@ -185,24 +185,6 @@ nums.sort((a,b) => {return b-a})            // nums.sort((a,b) => (a-b))
 Here sort function takes custom function to sort elements based on our requiremnets
 if positive = swap
 if negative = don't swap
-if 0 = don't swap
+if 0    =     don't swap
 */
 
-
-// Example
-function compare(person1,person2){
-  let main = [
-    "Venkatesh : 58LPA",
-    "ShriHari : 23LPA",
-    "Vivek : 16LPA",
-    "Maqsood : 9.5LPA",
-    "Prateek : 7.5LPA",
-    "Prajwal : 6.25LPA",
-    "Ameer : 5LPA",
-    "Maizoddin : 3.5LPA",
-  ];
-  return main.indexOf(person1) - main.indexOf(person2)
-}
-
-let need = ["Vivek : 16LPA", "Ameer : 5LPA", "Prajwal : 6.25LPA","Venkatesh : 58LPA"]
-need.sort(compare)

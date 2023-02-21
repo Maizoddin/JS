@@ -18,3 +18,8 @@ console.log(typeof g);  // Type of null is object
 nums = [1,2,3,4];
 console.log(typeof nums);   // object
 
+
+
+// isInteger()
+let num = 10;
+console.log(Number.isInteger(num));
