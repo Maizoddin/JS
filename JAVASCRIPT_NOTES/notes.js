@@ -17,3 +17,22 @@ process.stdout.write("Hello");
 console.log(Boolean("")); // false
 console.log(Boolean([])); //true
 console.log(Boolean({}));  //true
+
+
+// Important Memory Concepts
+
+// Stack 
+// Premitive DataTypes (Number, String, Boolean, Null, Undefined)  
+// in premitive datatypes copy of variables value will be assigned
+// Example:
+let num1 = 100;
+let num2 = num1;
+// Here copy is assigned so any changes in num2 will not affect num1
+
+// Heap
+// Non-Premitive DataTypes (Array, Object, Function)
+// in non-premitive datatypes refrence is assigned, so changes will affect to original copy
+let arr1 = [1,2,3];
+let arr2 = arr1;
+arr2.push(4);
+console.log(arr1); // arr1 = [1,2,3,4]

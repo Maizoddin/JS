@@ -29,9 +29,9 @@ let division2 = (num1, num2) => (num1/num2)
 
 // ----------------------------------------------------------------------------------
 
-// callback functions : functions without name
+// Anonymous Functions : functions without name
 nums = [22,33,44]
 
 nums.forEach((num) => {console.log(num*num);})
 // OR
-nums.forEach(function (num){console.log(num*2);})
+nums.forEach(function(num) {console.log(num*2);})
