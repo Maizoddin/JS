@@ -57,6 +57,13 @@ if (myInfo.salary){
   console.log("Does Not Exists");
 }
 
+// OR
+
+if (myInfo.hasOwnProperty("salary"){
+  console.log("Exists");
+}else{
+  console.log("Does Not Exists");
+}
 // ----------------------------------------------------------------------------------
 
 // Methods in Objects
