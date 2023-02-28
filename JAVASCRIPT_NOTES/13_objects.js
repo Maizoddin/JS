@@ -10,6 +10,8 @@ let myInfo = {
 
 // Creating new Object
 let myObject = new Object;
+// OR
+let myObj = {}
 
 // Accessing Elements
 let myAge = myInfo.age;        // " " is not required
