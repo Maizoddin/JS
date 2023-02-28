@@ -8,6 +8,8 @@ let myInfo = {
     college : "KLS GIT"
 }
 
+// Creating new Object
+let myObject = new Object;
 
 // Accessing Elements
 let myAge = myInfo.age;        // " " is not required
@@ -59,7 +61,7 @@ if (myInfo.salary){
 
 // OR
 
-if (myInfo.hasOwnProperty("salary"){
+if (myInfo.hasOwnProperty("salary")){
   console.log("Exists");
 }else{
   console.log("Does Not Exists");
