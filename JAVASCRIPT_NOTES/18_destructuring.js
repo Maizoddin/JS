@@ -4,6 +4,7 @@
 /* let myArray = ["Maaz",22,"GIT"];
 let [name,age,college] = myArray;
 console.log(name) */
+
 // Note : name does not matter much
 
 // -----------------------------------------------------
@@ -16,4 +17,5 @@ console.log(name) */
 }
 let {name, age, courseCount} = user;
 console.log(name) */
+
 // Note : names should be same and use {}

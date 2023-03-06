@@ -36,3 +36,17 @@ let arr1 = [1,2,3];
 let arr2 = arr1;
 arr2.push(4);
 console.log(arr1); // arr1 = [1,2,3,4]
+
+
+// All the Css properties are written in camelCase in JS 
+// All the Css properties are written in double quotes as a string
+Example :
+document.querySelector("body").style.backgroundImage = "url('../material/images/hungry.jpg')"
+
+
+// self executing anonymous functions
+(function(){
+    console.log("Hello World");
+  }) ()
+  
+  

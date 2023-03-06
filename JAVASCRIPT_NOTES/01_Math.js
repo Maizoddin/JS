@@ -52,16 +52,9 @@ let abs = Math.abs(-22);
 // -22 = 22
 
 
-// random
-// let random = Math.random();
-// It gives values between 0 - 1
-// Random values between 1-10
-// let random = Math.trunc((Math.random()*10));
-// Random values between 1-100
-// let random = Math.trunc((Math.random()*100));
-// Random values between 20-100
-// let random = Math.trunc((Math.random()*(100-20))+20);
-
-
 // PI
 let pi = Math.PI;
+
+
+// random
+// random number formula : let num = Math.floor(Math.random()*(max - min + 1)) + min
