@@ -47,3 +47,8 @@ document.querySelector("#red").addEventListener("click",function (){
   
   
   // here (this == event.target) both means the same. i.e both refers to current element on which event occured 
+
+
+
+// mouseover
+// mouseout
