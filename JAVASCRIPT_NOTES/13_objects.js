@@ -74,8 +74,9 @@ if (myInfo.hasOwnProperty("salary")){
 
 // Important
 // Inside objcet use "Normal Function". Don't use "Arrow Functions"
-// Inside Arrow Functions "this" keywords refers to global Object
-// Inside Normal Function "this" keyword refers to current object
+// Inside Normal Function "this" keyword refers to current object and "this" refers to the object with which object name we call the method. Ex(obj1.info())
+// Arrow function don't have there own "this" keyword so they refer to their surrounding object. (Mostly to global object) 
+// In call-back functions such as setTimeout, forEach this refers to windown object.[Because we won't call those methods explicitly so "this" refers to window object]
 
 // Example
 
