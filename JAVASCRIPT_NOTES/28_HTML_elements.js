@@ -23,7 +23,7 @@ let text = document.createTextNode("PAY NOW");
 button.appendChild(text);
 
 // append :
-// item.append(button)               Appends at the end of the node, it same as appendChild
+// item.append(button)               Appends at the end of the node, it is same as appendChild
 
 // prepend :
 // item.prepend(button)              Appends at the start of the node

@@ -1,5 +1,6 @@
 // Clousure   
 // Function along with it's lexical  environment is known as closure
+// Inner function gives access to outer function scope
 Example :
 function greet(){
    let name = "John";

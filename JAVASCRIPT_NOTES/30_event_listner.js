@@ -10,7 +10,7 @@ document.querySelector("button").addEventListener("click",()=>alert("Pressed"));
 
 
 // Important Note : 
-// Inside Function this-keyword refers to HTML Element  (Ex : button) [Note: Don't use Arrow function else this will refer to global object]
+// Inside Function this-keyword refers to current HTML Element  (Ex : button) [Note: Don't use Arrow function else this will refer to global object]
 // Function takes one optional argument which refers to Event   
 // properties of event : event.type(click,keypress etc), event.key(a,b,c,d etc),event.target(current-Element) etc
 
@@ -45,10 +45,8 @@ document.querySelector("#red").addEventListener("click",function (){
     console.log(`ClassList : ${this.classList}`);
   })
   
-  
-  // here (this == event.target) both means the same. i.e both refers to current element on which event occured 
-
-
 
 // mouseover
 // mouseout
+
+// Removing eventListner
