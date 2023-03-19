@@ -50,3 +50,10 @@ document.querySelector("#red").addEventListener("click",function (){
 // mouseout
 
 // Removing eventListner
+let btn = document.querySelector("#btn");
+btn.addEventListener("click",fun);
+let res = prompt("Do you want to cancel event Listner")
+if (res == "y"){
+  btn.removeEventListener("click",fun)
+}
+btn.removeEventListener("click",fun)
