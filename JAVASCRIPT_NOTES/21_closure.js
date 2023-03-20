@@ -1,6 +1,8 @@
 // Clousure   
-// Function along with it's lexical  environment is known as closure
-// Inner function gives access to outer function scope
+// A closure is the combination of a function and the lexical environment within which that function was declared
+// OR
+// A closure is an inner function that has access to the outer (enclosing) function's variables
+
 Example :
 function greet(){
    let name = "John";
