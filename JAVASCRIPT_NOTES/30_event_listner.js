@@ -46,6 +46,12 @@ document.querySelector("#red").addEventListener("click",function (){
   })
   
 
+Example :
+document.querySelector("#btn").addEventListener("click",()=>{
+  document.querySelector("div").textContent = document.querySelector("input").value
+})
+
+
 // mouseover
 // mouseout
 
