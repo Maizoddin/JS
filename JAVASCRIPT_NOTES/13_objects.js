@@ -14,7 +14,12 @@ let myObject = new Object;
 let myObj = {}
 
 // Accessing Elements
-let myAge = myInfo.age;        // " " is not required
+let myAge = myInfo.age;
+// " " is not required          
+//Important : here i can't use " ". 
+Example : obj = {"name":"john"}
+// Now i can't access the object property because " " is not allowed
+
 // OR
 let myName = myInfo["name"];  //  " " is required
 
