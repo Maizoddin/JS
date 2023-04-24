@@ -73,6 +73,28 @@ if (myInfo.hasOwnProperty("salary")){
 }else{
   console.log("Does Not Exists");
 }
+
+// --------------------------------------------
+
+// freeze()
+Object.freeze(myInfo);
+
+// --------------------------------------------
+
+// assign : merging objects
+const obj1 = {
+  a:"apple",
+  b:"ball"
+}
+
+const obj2 = {
+  c:"cat",
+  d:"dog"
+}
+
+const obj3 = {...obj1, ...obj2}
+// OR
+const obj3 = Object.assign({},obj1,obj2)
 // ----------------------------------------------------------------------------------
 
 // Methods in Objects
