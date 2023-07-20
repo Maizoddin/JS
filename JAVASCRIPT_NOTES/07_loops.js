@@ -62,7 +62,7 @@ for (let idx in str) {
 
 "for of"
 // It gives values
-// It wonk's on Array, String, Set
+// It work's on Array, String, Set
 
 // Example 1
 /*
