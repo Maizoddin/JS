@@ -25,6 +25,8 @@ console.log(name.toLowerCase());   // johnny singh
 
 // replace
 console.log(name.replace("johnny", "tommy"));  // tommy singh  
+// replaceAll()
+
 
 // endsWith
 console.log(name.endsWith("singh"));  // true
