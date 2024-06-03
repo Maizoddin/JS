@@ -132,4 +132,15 @@ udemy.getCourceCertificate = function(){
   udemy.myCourses()
   udemy.getCourceCertificate()
 
-  
+
+// creating key using variable inside object : use []
+// Example :
+let status = "accountStatus"
+let obj = {
+    id:22,
+    role:"admin",
+    [status] : "active"
+}
+
+console.log(obj)
+// { id: 22, role: 'admin', accountStatus: 'active' }
