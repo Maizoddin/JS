@@ -19,3 +19,19 @@ let {name, age, courseCount} = user;
 console.log(name) */
 
 // Note : names should be same and use {}
+
+// ----------------------------------------------------------
+const info = {
+    address:{
+        street:'Navi galli',
+        city : 'Belgaum'
+    },
+    education :{
+        school:'Gomatesh',
+        college:'GIT'
+    }
+}
+
+const {address:{street,city}, education} = info
+
+console.log(street)
