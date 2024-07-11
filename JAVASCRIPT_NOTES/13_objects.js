@@ -144,3 +144,23 @@ let obj = {
 
 console.log(obj)
 // { id: 22, role: 'admin', accountStatus: 'active' }
+
+
+// ------------------
+
+// Destructuring
+// Example :
+const info = {
+    address:{
+        street:'Navi galli',
+        city : 'Belgaum'
+    },
+    education :{
+        school:'Gomatesh',
+        college:'GIT'
+    }
+}
+
+const {address:{street,city}, education} = info
+
+console.log(street)
