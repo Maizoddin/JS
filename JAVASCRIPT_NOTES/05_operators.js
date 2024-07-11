@@ -36,5 +36,5 @@ console.log(6^3);    // 5
 
 // Logical Operators
 // &&  ||  !
-Note : In Logical || operator if both the values are falsy then it will return the last value
+// Note : In Logical || operator if both the values are falsy then it will return the last value
 
