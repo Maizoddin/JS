@@ -25,6 +25,7 @@ O/P : max
 
 // ----------------------------------------------------------------------------------------
 // Arrow function does not bind this keyword
+// Arrow functions do not have their own this context; they inherit this from the enclosing lexical context (the surrounding non-arrow function or global context).
 // Arrow function don't have their own "this" so "this" refers to where the function is defined  OR surrounding object
 // [if there is no any surrounding object then "this" refers to window object]
 
