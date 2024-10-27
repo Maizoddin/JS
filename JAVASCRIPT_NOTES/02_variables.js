@@ -40,4 +40,4 @@ because let will create new variable for each block since its block scoped
 
 // x()
 Output : 6 6 6 6 6
-because only one variable will be created and reference will be shared across all blocks since var scope is function scoped
+because only one variable will be created and reference will be shared across all blocks since var scope is function scoped and by the time callback executes the loop will be over and value will be 6
