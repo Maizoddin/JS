@@ -14,3 +14,21 @@ function greet(){
 
 let fun = greet();
 fun();
+
+
+================================
+
+function outer(){
+    let count = 0
+    return function inner(){
+        count ++
+        return count
+    }
+}
+
+const x = outer()
+console.log(x())
+console.log(x())
+console.log(x())
+
+Output : 1 2 3
