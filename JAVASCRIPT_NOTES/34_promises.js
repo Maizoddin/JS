@@ -128,4 +128,40 @@ getWeather()
   })
   .then((data)=>{console.log(data)})
   .catch((err) => {console.log(err.message)}) */
+===============================================================
+  const p1 = new Promise((resolve, reject) => {
+  // setTimeout(() => resolve("Promise1 Resolved"), 2000);
+  setTimeout(() => reject("Promise1 Rejected"), 2000);
+});
+const p2 = new Promise((resolve, reject) => {
+  // setTimeout(() => resolve("Promise2 Resolved"), 5000);
+  setTimeout(() => reject("Promise2 Rejected"), 5000);
+});
+const p3 = new Promise((resolve, reject) => {
+  // setTimeout(() => resolve("Promise3 Resolved"), 1000);
+  setTimeout(() => reject("Promise3 Rejected"), 1000);
+});
+
+Promise.all([p1, p2, p3])
+  .then((res) => console.log("Result", res))
+  .catch((err) => console.log("Error", err));
+// If all success then array of result 
+// If any one fails then return immediately with error
+
+Promise.allSettled([p1, p2, p3])
+  .then((res) => console.log("Result", res))
+  .catch((err) => console.log("Error", err));
+// It waits for all promises
+// It returns array or result even if some promises fails. Example : [ 'Promise1 Resolved', 'Promise3 Rejected', 'Promise3 Resolved' ]
+
+Promise.race([p1, p2, p3])
+  .then((res) => console.log("Result", res))
+  .catch((err) => console.log("Error", err));
+// It return the result of first settled promise whether its success or failure
+
+Promise.any([p1, p2, p3])
+  .then((res) => console.log("Result", res))
+  .catch((err) => console.log("Error", err));
+// It wait for atleast one promise to success and returns immediately after it gets atleast one successful, if all fails then it returns AggregateError : [errors]: [ 'Promise1 Rejected', 'Promise3 Rejected', 'Promise2 Rejected' ]
+
 
