@@ -164,4 +164,31 @@ Promise.any([p1, p2, p3])
   .catch((err) => console.log("Error", err));
 // It wait for atleast one promise to success and returns immediately after it gets atleast one successful, if all fails then it returns AggregateError : [errors]: [ 'Promise1 Rejected', 'Promise3 Rejected', 'Promise2 Rejected' ]
 
+====================================================
+Polyfill for Promise.all()
 
+Code :
+Promise.exam = function (promises) {
+  return new Promise((resolve, reject) => {
+    if (!Array.isArray(promises)) {
+      reject(new TypeError("Argument must be an array"));
+    }
+    if (promises.length === 0) {
+      resolve([]);
+    }
+    const result = new Array(promises.length);
+    let resolveCount = 0;
+    for (let index in promises) {
+      let promise = promises[index];
+      promise
+        .then((data) => {
+          result[index] = data;
+          resolveCount += 1;
+          if (resolveCount == promises.length) {
+            resolve(result);
+          }
+        })
+        .catch((error) => reject(error));
+    }
+  });
+};
