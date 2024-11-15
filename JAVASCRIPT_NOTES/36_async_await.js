@@ -21,3 +21,37 @@ async function getTime() {
 }
 
 getTime(); 
+
+
+===================================================================
+Example 
+
+const p1 =  new Promise((resolve, reject) => {
+    setTimeout(()=>resolve("Promise1 resolved"),10000)
+})
+
+const p2 = new Promise((resolve, reject) => {
+    setTimeout(()=>resolve("Promise2 resolved"), 5000)
+})
+
+const fnP = async () => {
+    console.log("Parent Function")
+    const v1 = await p1
+    console.log(v1)
+    fnC()
+}
+const fnC = async () => {
+    console.log("Child Function")
+    const v2 = await p2
+    console.log(v2)
+}
+
+fnP()
+
+// Output
+Parent Function
+
+// after 10 sec both promises will get resolved
+Promise1 resolved
+Child Function
+Promise2 resolved
